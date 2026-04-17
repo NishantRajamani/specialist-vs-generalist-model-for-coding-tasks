@@ -47,10 +47,3 @@ Problem → Reasoning Model → Plan → Coder Model → Code
 ## 🧠 Key Idea
 
 > Can structured reasoning across smaller models compete with a single larger model?
-
----
-
-## 👨‍💻 Author
-
-Nishant Rajamani  
-MSc Applied Data Science, Utrecht University
