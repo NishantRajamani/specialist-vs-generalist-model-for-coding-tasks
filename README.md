@@ -10,7 +10,7 @@ A large model handles:
 - problem solving
 - code generation  
 
-Example: `Qwen2.5-Coder-14B (GGUF via llama.cpp)`
+Example: `Qwen2.5-Coder-14B`
 
 ---
 
@@ -18,16 +18,16 @@ Example: `Qwen2.5-Coder-14B (GGUF via llama.cpp)`
 Problem → Reasoning Model → Plan → Coder Model → Code
 
 
-- **Reasoning model**: breaks down the problem and generates a plan  
+- **Reasoning model**: decomposes the problem and generates a plan  
 - **Coder model**: converts the plan into executable code  
 
 ---
 
 ## ⚙️ Setup
 
-- Apple Silicon (M-series Mac)
-- `llama-cpp-python` (GGUF models with Metal acceleration)
-- Local inference (no API usage)
+- NVIDIA GPU (CUDA-enabled)
+- HuggingFace Transformers / vLLM
+- Local inference
 
 ---
 
@@ -35,8 +35,8 @@ Problem → Reasoning Model → Plan → Coder Model → Code
 
 - Tasks: Competitive programming problems  
 - Metrics:
-  - `pass@1` (single attempt)
-  - `pass@5` (best of multiple attempts)
+  - `pass@1`
+  - `pass@5`
 
 ### Generation Strategy
 - Low temperature (`0.1–0.2`) → pass@1  
@@ -46,7 +46,7 @@ Problem → Reasoning Model → Plan → Coder Model → Code
 
 ## 🧠 Key Idea
 
-> Can separating reasoning and coding across smaller models match or outperform a single larger model?
+> Can structured reasoning across smaller models compete with a single larger model?
 
 ---
 
