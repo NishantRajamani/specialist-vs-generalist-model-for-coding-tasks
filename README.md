@@ -1,6 +1,6 @@
 # 🧠 Multi-Model vs Single LLM for Code Generation
 
-This project compares a **modular multi-model pipeline** against a **single large language model** for solving competitive programming problems.
+This project compares a **modular multi-model pipeline** against a **single large language model** for solving competitive programming problems using a subset of problems from LiveCodeBench and APPS dataset.
 
 ## 🚀 Approach
 
@@ -24,6 +24,7 @@ Problem → Reasoning Model → Plan → Coder Model → Code
 ---
 
 ## ⚙️ Setup
+Not much do to :) just run the notebook on (preferably powerful) GPU
 
 - NVIDIA GPU (CUDA-enabled)
 - HuggingFace Transformers / vLLM
